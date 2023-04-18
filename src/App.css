@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   background-size: cover;
-  color: rgb(255, 255, 255);
+  color: rgb(200, 1, 1);
 }
 
 .modal {
