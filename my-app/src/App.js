@@ -1,6 +1,9 @@
+import React from 'react';
 import './App.css';
-// import { ICONNAME } from 'css.gg'
 
+const handleClick = () => {
+  console.log('me click');
+};
 
 function App() {
   return (
@@ -10,7 +13,7 @@ function App() {
            <div class="modal">
              <h2>Chrats</h2>
            </div>
-             <button class="button"><h3>Buttom 1</h3></button>
+             <button class="button" onClick={handleClick}><h3>Buttom 1</h3></button>
              <button class="button"><h3>Buttom 2</h3></button>
              <button class="button"><h3>Buttom 3</h3></button>       
       </div>
