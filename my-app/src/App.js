@@ -7,13 +7,14 @@ function App() {
 
     <div class="App">
       <div class="header"> 
-        <div class="container">
            <div class="modal">
              <h2>Chrats</h2>
            </div>
-         </div>
-      
+             <button class="button1">Buttom 1</button>
+             <button class="button2">Buttom 2</button>
+             <button class="button3">Buttom 3</button>       
       </div>
+      
       <div class="body"> 
         <div class="one">
           <i class="gg-thermometer"></i>
