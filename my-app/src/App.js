@@ -10,11 +10,11 @@ function App() {
            <div class="modal">
              <h2>Chrats</h2>
            </div>
-             <button class="button1">Buttom 1</button>
-             <button class="button2">Buttom 2</button>
-             <button class="button3">Buttom 3</button>       
+             <button class="button"><h3>Buttom 1</h3></button>
+             <button class="button"><h3>Buttom 2</h3></button>
+             <button class="button"><h3>Buttom 3</h3></button>       
       </div>
-      
+
       <div class="body"> 
         <div class="one">
           <i class="gg-thermometer"></i>
