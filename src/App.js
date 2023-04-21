@@ -21,7 +21,7 @@ function App() {
         <div className="modal">
           <h2>Chrats</h2>
         </div>
-        <button className="button" onClick={handleClick1}><h3>Buttom 111111111111</h3></button>
+        <button className="button" onClick={handleClick1}><h3>Buttom 1111111111111111111111111111111</h3></button>
         <button className="button" onClick={handleClick2}><h3>Buttom 2</h3></button>
         <button className="button" onClick={handleClick3}><h3>Buttom 3</h3></button>
       </div>
