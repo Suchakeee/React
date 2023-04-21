@@ -1,0 +1,254 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: rgb(11,5,28);
+  min-height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+.header { grid-area: 1 / 1 / 2 / 11;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+    /* background-color: rgb(93, 8, 228); */
+
+    
+}
+
+.modal {
+    padding: 0rem 4rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 0.5rem;
+  }
+
+.button {
+  padding: 0.5em 1em;
+  font-size: 12px;
+  text-transform: uppercase;
+  color:#ddd;
+  /* letter-spacing: 2.5px; */
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(11,5,28);
+}
+
+.button:hover {
+  box-shadow: 0 0 5px rgb(0, 255, 21),
+  0 0 25px rgb(0, 255, 21), 0 0 50px rgb(0, 255, 21),
+  0 0 100px rgb(0, 255, 21), 0 0 200px rgb(0, 255, 21);
+}
+
+.body { grid-area: 2 / 1 / 6 / 11; 
+    display: flex;
+    justify-content: space-around;
+}
+.one{
+    width: 200px;
+    height: 300px;
+    /* width: clamp(200px,30%); */
+    /* padding-top: 100%; */
+    /* text-align: center; */
+    /* max-width: 50%; */
+    padding: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 0.9rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 240px;
+    box-shadow: 0px 5px 15px rgba(0, 255, 21, 0.25);
+  }
+  
+  .two{
+    width: 200px;
+    height: 300px;
+    /* width: clamp(200px,30%); */
+    /* padding-top: 100%; */
+    /* text-align: center; */
+    /* max-width: 50%; */
+    padding: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 0.9rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 240px;
+    box-shadow: 0px 5px 15px rgba(0, 255, 21, 0.25);
+  }
+  
+  .three{
+    width: 200px;
+    height: 300px;
+    /* width: clamp(200px,30%); */
+    /* padding-top: 100%; */
+    /* text-align: center; */
+    /* max-width: 50%; */
+    padding: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 0.9rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 240px;
+    box-shadow: 0px 5px 15px rgba(0, 255, 21, 0.25);
+  }
+
+  /* Charts */
+  @property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+  
+  .pie {
+    --p:100;
+    --b:40px;
+    --c:rgb(0, 255, 21);
+    --w:150px;
+    
+    width:var(--w);
+    aspect-ratio:1;
+    position:relative;
+    display:inline-grid;
+    place-content:center;
+    font-size:20px;
+    font-weight:bold;
+    font-family:sans-serif;
+    
+  }
+  .pie:before,
+  .pie:after {
+    content:"";
+    position:absolute;
+    border-radius:40%;
+  }
+  .pie:before {
+    inset:0;
+    background:
+      radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+      conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+  .pie:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+  }
+  .animate {
+    animation:p 1s .10s both;
+  }
+  
+  
+  @keyframes p {
+    from{--p:0}
+  }
+  
+  body {
+    background:#ddd;
+  }
+  
+  
+  
+  /* ////////////////////////// */
+
+  /* Icon */
+  
+
+
+  /* css.gg */
+  @import url('https://css.gg/css');
+  
+  .gg-thermometer { 
+    margin-top: 10%;
+    margin-left: 45%;
+    color: rgb(255, 255, 7);
+    --ggs: 2;
+  }
+  /* //////// */
+  
+
+  /* Flip card */
+/* Styles the card and add a pointer cursor, so the user knows that the content is clickable */
+label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* Hide the checkbox while still keeping its property */
+input {
+  display: none;
+}
+
+  
+  .flip-card {
+  background-color: transparent;
+  width: 90%;
+  height: 90%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: static;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+:checked + .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(11,5,28);
+  color: rgb(255, 255, 255);
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(11,5,28);
+  color: rgb(255, 255, 255);
+  transform: rotateY(180deg);
+}
+
+  /* ////////// */
+  
+
+  
