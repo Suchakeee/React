@@ -27,7 +27,7 @@
 }
 
 .modal {
-    padding: 0rem 4rem;
+    padding: 1rem 4rem;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.4); 
@@ -47,8 +47,7 @@
 
 .button:hover {
   box-shadow: 0 0 5px rgb(0, 255, 21),
-  0 0 25px rgb(0, 255, 21), 0 0 50px rgb(0, 255, 21),
-  0 0 100px rgb(0, 255, 21), 0 0 200px rgb(0, 255, 21);
+  0 0 25px rgb(0, 255, 21)
 }
 
 .body { grid-area: 2 / 1 / 6 / 11; 
@@ -176,7 +175,8 @@
   @import url('https://css.gg/css');
   
   .gg-thermometer { 
-    margin-top: 10%;
+    margin-top:10%;
+    margin-bottom:10%;
     margin-left: 45%;
     color: rgb(255, 255, 7);
     --ggs: 2;
@@ -189,7 +189,7 @@
 label {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 80%;
   position: absolute;
   cursor: pointer;
 }
@@ -202,9 +202,9 @@ input {
   
   .flip-card {
   background-color: transparent;
-  width: 90%;
-  height: 90%;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 100%;
+  height: 80%;
+ 
 }
 
 /* This container is needed to position the front and back side */
