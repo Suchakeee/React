@@ -16,7 +16,13 @@ function App() {
         <div className="modal">
           <h2>Chrats</h2>
         </div>
+<<<<<<< HEAD
         <Button/>
+=======
+        <button className="button" onClick={handleClick1}><h3>Buttom 12321313213131</h3></button>
+        <button className="button" onClick={handleClick2}><h3>Buttom 2</h3></button>
+        <button className="button" onClick={handleClick3}><h3>Buttom 3</h3></button>
+>>>>>>> 10a13fad82baccb62da59aafec30d19d36d6348c
       </div>
 
       <div className="body">
