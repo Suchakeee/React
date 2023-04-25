@@ -16,7 +16,7 @@ function App() {
         <div className="modal">
           <h2>Chrats</h2>
         </div>
-        <Button />
+        <Button/>
       </div>
 
       <div className="body">
@@ -24,7 +24,7 @@ function App() {
           <div class="flip-card">
             <input type="checkbox" />
             <div class="flip-card-inner">
-              <Charts />
+              <Charts/>
             </div>
           </div>
         </label>
