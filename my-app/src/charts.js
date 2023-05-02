@@ -17,7 +17,12 @@ export default function Charts() {
             <i className="gg-thermometer"></i>
             <h1 style={{padding:'5%'}}>H3</h1>
             <div className="pie animate"> 100%</div>
-            </div>
+        </div>
+        <div className="four">
+            <i className="gg-thermometer"></i>
+            <h1 style={{padding:'5%'}}>H4</h1>
+            <div className="pie animate"> 100%</div>
+        </div>
         </div>
         <div class="flip-card-back">
         <div className="one">
@@ -33,6 +38,11 @@ export default function Charts() {
         <div className="three">
             <i className="gg-thermometer"></i>
             <h1 style={{padding:'5%'}}>H6</h1>
+            <div className="pie animate"> 100%</div>
+        </div>
+        <div className="four">
+            <i className="gg-thermometer"></i>
+            <h1 style={{padding:'5%'}}>H7</h1>
             <div className="pie animate"> 100%</div>
         </div>
         </div>

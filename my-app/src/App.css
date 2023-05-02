@@ -34,21 +34,44 @@
     border-radius: 0.5rem;
   }
 
-.button {
-  padding: 0.5em 1em;
-  font-size: 12px;
-  text-transform: uppercase;
-  color:#ddd;
-  /* letter-spacing: 2.5px; */
-  border: none;
-  border-radius: 50px;
-  background-color: rgb(11,5,28);
-}
-
-.button:hover {
-  box-shadow: 0 0 5px rgb(0, 255, 21),
-  0 0 25px rgb(0, 255, 21)
-}
+  .button {
+    background-color: rgb(11,5,28);
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: rgb(0, 255, 21);
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    /* outline: 2px solid rgb(0, 255, 21);; */
+  }
+  
+  button:hover {
+    color: #000000;
+    transform: scale(1.1);
+    box-shadow: 4px 5px 17px -4px rgb(0, 255, 21);;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(0, 255, 21);;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  button:hover::before {
+    width: 150%;
+  }
 
 .body { grid-area: 2 / 1 / 6 / 11; 
     display: flex;
@@ -57,10 +80,6 @@
 .one{
     width: 200px;
     height: 300px;
-    /* width: clamp(200px,30%); */
-    /* padding-top: 100%; */
-    /* text-align: center; */
-    /* max-width: 50%; */
     padding: 1rem;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -75,10 +94,6 @@
   .two{
     width: 200px;
     height: 300px;
-    /* width: clamp(200px,30%); */
-    /* padding-top: 100%; */
-    /* text-align: center; */
-    /* max-width: 50%; */
     padding: 1rem;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -93,10 +108,20 @@
   .three{
     width: 200px;
     height: 300px;
-    /* width: clamp(200px,30%); */
-    /* padding-top: 100%; */
-    /* text-align: center; */
-    /* max-width: 50%; */
+    padding: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 0.9rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 240px;
+    box-shadow: 0px 5px 15px rgba(0, 255, 21, 0.25);
+  }
+
+  .four{
+    width: 200px;
+    height: 300px;
     padding: 1rem;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -116,11 +141,10 @@
   }
   
   .pie {
-    --p:100;
+    --p:70;
     --b:40px;
     --c:rgb(0, 255, 21);
     --w:150px;
-    
     width:var(--w);
     aspect-ratio:1;
     position:relative;
@@ -135,7 +159,7 @@
   .pie:after {
     content:"";
     position:absolute;
-    border-radius:40%;
+    border-radius:50%;
   }
   .pie:before {
     inset:0;

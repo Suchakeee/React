@@ -1,22 +1,29 @@
-import React from 'react';
-// import Ttt from './ttt'
-import Button from './button'
+import React from "react";
+import { Button } from './Components';
+import { Container } from './Component.styled'
 import Charts from './charts';
 import './App.css';
 
 
+export default function App() {
 
-function App() {
-  
+  function handleClick() {
+      console.log("Click ME")
+  }
+
+
 
   return (
 
     <div className="App">
       <div className="header">
         <div className="modal">
-          <h2>Chrats</h2>
+          <h2>Charts</h2>
         </div>
-        <Button/>
+        <Button label="Hello World!" onClick={handleClick}/>
+        <Container>
+          ButtonNew
+        </Container>
       </div>
 
       <div className="body">
@@ -33,5 +40,3 @@ function App() {
 
   );
 }
-
-export default App;
