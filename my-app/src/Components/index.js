@@ -1,3 +1,5 @@
 import Button from "./Button";
+import Charts from "./chartsApp";
+import NameApp from "./nameApp";
 
-export {Button};
+export {Button, Charts, NameApp};

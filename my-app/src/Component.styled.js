@@ -1,6 +1,16 @@
-import Styled from 'styled-components'
+import styled from 'styled-components';
+import { Temperature } from '@styled-icons/fluentui-system-regular/Temperature';
 
-export const Container = Styled.button`
+export const ContainerNameapp = styled.div`
+    padding: 1rem 4rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 0.5rem;
+
+`;
+
+export const ContainerButton = styled.button`
     background-color: rgb(11,5,28);
     padding: 1em 2em;
     border: none;
@@ -38,3 +48,29 @@ export const Container = Styled.button`
         }
     
 `;
+
+export const ContainerCharts = styled.div`
+width: 200px;
+height: 300px;
+margin: 0 auto;
+text-align: center;
+// padding: 1rem;
+// border: 1px solid red;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+background-color: rgba(255, 255, 255, 0.4); 
+border-radius: 0.9rem;
+box-shadow: 0px 5px 15px rgba(0, 255, 21, 0.25);
+`;
+
+export const TempOrange = styled(Temperature)`
+color:#FF4500;
+
+
+`;
+

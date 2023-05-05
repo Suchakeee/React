@@ -1,11 +1,11 @@
-import { Container } from "../Component.styled";
+import { ContainerButton } from "../Component.styled";
 
 export default function Button(props) {
   const { label, onClick } = props;
 
   return (
-    <Container onClick={onClick}>
+    <ContainerButton onClick={onClick}>
       <h3>{label}</h3>
-    </Container>
+    </ContainerButton>
   );
 }

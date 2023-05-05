@@ -37,7 +37,10 @@
 .body { grid-area: 2 / 1 / 6 / 11; 
     display: flex;
     justify-content: space-around;
+  
 }
+
+
 .one{
     width: 200px;
     height: 300px;
