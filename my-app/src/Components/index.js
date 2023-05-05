@@ -1,5 +1,8 @@
 import Button from "./Button";
-import Charts from "./chartsApp";
+import TempFront from "./TempFront";
+import TempBack from "./TempBack";
 import NameApp from "./nameApp";
+import FlipCard from "./FlipCard";
 
-export {Button, Charts, NameApp};
+
+export {Button, TempFront, TempBack, NameApp, FlipCard};

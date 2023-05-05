@@ -2,7 +2,7 @@ import { ContainerCharts } from "../Component.styled"
 import { TempOrange } from '../Component.styled';
 import PieChart from "./pieCharts";
 
-export default function Charts(props){
+export default function TempFront(props){
     const { label } = props;
     
 

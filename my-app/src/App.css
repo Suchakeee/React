@@ -21,26 +21,19 @@
   align-items: center;
   justify-content: space-evenly;
   
-    /* background-color: rgb(93, 8, 228); */
 
     
 }
 
-.modal {
-    padding: 1rem 4rem;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.4); 
-    border-radius: 0.5rem;
-  }
 
 .body { grid-area: 2 / 1 / 6 / 11; 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   
 }
 
-
+/* 
 .one{
     width: 200px;
     height: 300px;
@@ -98,7 +91,7 @@
   }
 
   /* Charts */
-  @property --p{
+  /* @property --p{
     syntax: '<number>';
     inherits: true;
     initial-value: 0;
@@ -149,7 +142,7 @@
   
   body {
     background:#ddd;
-  }
+  } */
   
   
   
@@ -160,7 +153,7 @@
 
 
   /* css.gg */
-  @import url('https://css.gg/css');
+  /* @import url('https://css.gg/css');
   
   .gg-thermometer { 
     margin-top:10%;
@@ -168,75 +161,73 @@
     margin-left: 45%;
     color: rgb(255, 255, 7);
     --ggs: 2;
-  }
+  } */
   /* //////// */
   
 
   /* Flip card */
 /* Styles the card and add a pointer cursor, so the user knows that the content is clickable */
-label {
+/* label {
   display: block;
   width: 100%;
   height: 80%;
   position: absolute;
   cursor: pointer;
-}
+} */
 
 /* Hide the checkbox while still keeping its property */
-input {
+ /* input {
   display: none;
-}
+} */
 
   
-  .flip-card {
+  /* .flip-card {
   background-color: transparent;
   width: 100%;
   height: 80%;
  
-}
+}  */
 
 /* This container is needed to position the front and back side */
-.flip-card-inner {
+/* .flip-card-inner {
   position: static;
   width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-}
+} */
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-:checked + .flip-card-inner {
+/* :checked + .FlipcardsInner {
   transform: rotateY(180deg);
-}
+} */
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+/* .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
-}
+} */
 
 /* Style the front side (fallback if image is missing) */
-.flip-card-front {
+/* .flip-card-front {
   display: flex;
   justify-content: space-around;
   background-color: rgb(11,5,28);
   color: rgb(255, 255, 255);
-}
+} */
 
 /* Style the back side */
-.flip-card-back {
+/* .flip-card-back {
   display: flex;
   justify-content: space-around;
   background-color: rgb(11,5,28);
   color: rgb(255, 255, 255);
   transform: rotateY(180deg);
 }
-
-  /* ////////// */
-  
+  */
 
   
