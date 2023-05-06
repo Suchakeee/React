@@ -72,3 +72,4 @@ export const TempOrange = styled(Temperature)`
     color:#FF4500;
 
 `;
+

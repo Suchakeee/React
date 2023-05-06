@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import { Button } from './Components';
 import { NameApp } from './Components';
 import { FlipCard } from "./Components";
+// import { EditTextBox } from './Components'
+import { Popup } from './Components';
 
 
 
@@ -21,7 +23,7 @@ export default function App() {
     <div className="App">
       <div className="header">
         <NameApp label="NameApp!"/>
-        <Button label="Button1" onClick={handleClick}/>
+        <Popup label="Setting"/>
         <Button label="Button2" onClick={handleClick}/>
       </div>
 
@@ -29,18 +31,7 @@ export default function App() {
         <FlipCard frontLabel ="TempFront1" backLabel = "TempBack1"/>
         <FlipCard frontLabel ="TempFront2" backLabel = "TempBack2"/>
         <FlipCard frontLabel ="TempFront3" backLabel = "TempBack3"/>
-        
-        {/* <label>
-          <div class="flip-card">
-            <input type="checkbox" />
-            <div class="flip-card-inner"> */}
-              {/* <Charts label="Temp1"/>
-              <Charts label="Temp2"/>
-              <Charts label="Temp3"/>
-              <Charts label="Temp4"/> */}
-            {/* </div>
-          </div>
-        </label> */}
+        <FlipCard frontLabel ="TempFront4" backLabel = "TempBack4"/>
       </div>
     </div>
   </Fragment>      
