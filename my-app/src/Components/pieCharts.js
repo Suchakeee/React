@@ -3,8 +3,10 @@ import ReactEcharts from "echarts-for-react";
 
 export default function pieChart() {
     
-    const Temp = 50;
-    const Empty = 200;
+    const Temp = 37;
+    const Empty = 100 - Temp;
+
+
 
     const colorPalette = ['#FF4500', '#00ff15'];
 
